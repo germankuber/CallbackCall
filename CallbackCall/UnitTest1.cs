@@ -34,7 +34,9 @@ namespace CallbackCall
     {
         public void CallService(CallServicesRequest request)
         {
-
+            request.Success(1);
+            request.Error("Error");
+            request.TimeOut();
         }
     }
 
